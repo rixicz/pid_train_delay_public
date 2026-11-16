@@ -1,8 +1,3 @@
-import requests
-from requests.adapters import HTTPAdapter
-from urllib3.util.retry import Retry
-import logging
-
 retry_strategy = Retry(
     total=3,
     backoff_factor=1,
