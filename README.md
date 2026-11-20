@@ -56,18 +56,15 @@ minutes.
 
 ## Run it automatically
 
-Schedule `main.py` with your operating system's task scheduler. For example, in
-Windows Task Scheduler, create a task with:
+It is advisable to deploy this to your homelab. If you do not have one you can alse make use of free plans of several hosting services (Azure, AWS, Oracle Cloud...) as I do.
 
-- **Program/script:** the path to `python.exe` (find it with
-  `py -c "import sys; print(sys.executable)"`)
-- **Add arguments:** the full path to `main.py`
-- **Start in:** the repository directory
-- **Trigger:** the desired recurring interval
+Or you can create a GitHub Actions workflow with `schedule.yaml` which sample is available in this repo too. Just keep in mind that it has to be in the folder `/.github/workflows` in order to work. 
+However, I do not recommend this method as GitHub Actions can run with a long delay (up to several hours). It is advisable
 
-Save the task and use **Run** to check that it sends a notification. Keep the
-computer awake and connected to the internet at the scheduled time. Each run
-performs a fresh API request and sends a notification; set the interval to
-avoid sending more updates than you need.
+## AI Element
 
-Or you can create a GitHub Actions workflow with `schedule.yaml` which sample is available in this repo too. Just keep in mind that it has to be in the folder `/.github/workflows` in order to work.
+README.md - fully developed with AI
+
+main.py - core logic made by me, some details are AI written though
+
+schedule.yaml - full AI + it is only a sample for someone who wants to host this via GitHub Actions
