@@ -63,8 +63,8 @@ However, I do not recommend this method as GitHub Actions can run with a long de
 
 ## AI Element
 
-README.md - fully developed with AI
+`README.md` - fully developed with AI
 
-main.py - core logic made by me, some details are AI written though
+`main.py` - core logic made by me, some details are AI written though
 
-schedule.yaml - full AI + it is only a sample for someone who wants to host this via GitHub Actions
+`schedule.yaml` - full AI + it is only a sample for someone who wants to host this via GitHub Actions
